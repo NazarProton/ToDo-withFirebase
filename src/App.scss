@@ -1,0 +1,57 @@
+@import url(https://fonts.googleapis.com/css2?family=Play:wght@400;700;900&display=swap);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.dark {
+  background: #14223C;
+}
+
+#pagination {
+  ul {
+    li {
+      button {
+        border-color: rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
+
+      }
+
+      .Mui-selected {
+        border-color: rgb(34, 53, 223);
+        color: rgb(34, 53, 223);
+        background-color: rgba(255, 245, 245, 0.144);
+      }
+    }
+  }
+}
+
+#darkModal {
+  background-color: rgb(69, 70, 87);
+
+  * {
+    color: rgb(247, 247, 247);
+  }
+
+  form {
+    div {
+      div {
+        input {
+          background-color: rgba(99, 100, 124, 0.596);
+        }
+
+        input:-webkit-autofill ::before ::after {
+          background-color: #000000; // Ваш вибраний колір фону
+          color: rgb(247, 247, 247) // Ваш вибраний колір тексту
+        }
+      }
+    }
+  }
+
+}
